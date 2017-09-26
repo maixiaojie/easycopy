@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Easy CopyCV",
+  "version": "1.0.1",
+  "description": "openBridge环境变量快速迁移",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "web_accessible_resources": [
+    "images/icon128.png"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+    },
+    "default_title": "Easy CopyCV",
+    "default_popup": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": ["storage","tabs", "notifications","http://*/*","https://*/*"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["static/js/jquery.min.js","content.js"],
+    "run_at": "document_start",
+    "all_frames": true
+  }]
+}
