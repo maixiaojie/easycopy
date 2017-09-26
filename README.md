@@ -1,30 +1,21 @@
-![](http://opj15jbpo.bkt.clouddn.com/17-5-30/1324633.jpg)
+![](http://oetuly2ki.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170926112749.png)
+## 功能点：
+- 所有变量存储在localstroage里
+- 初始化，加载localstroage数据，没有则为空
+- 可以添加，从页面里环境变量中选取或者手动添加
+- 可以删除，任意一条或者多条localstorage中的值
+- 可以修改localstorage中的值
+- 填充页面，单选或者多选，有该key则修改，没有则添加
+- 清空所有localstorage中值
 
-Easy todo
----
 
-一个简洁高效的待办事项 chrome 扩展
+## 技术知识点：
+- ES6
+- webpack
+- babel
+- less
+- vue組件通信
+- chrome插件--扩展和content_script通信（长链接和短链接）
+- chrome插件--content_script对tab内页面dom的操作
+- chrome插件--本地存储使用方法
 
-### 预览
-
-##### 插件主界面
-
-![](http://opj15jbpo.bkt.clouddn.com/17-5-30/41140726.jpg)
-
-##### 提醒通知
-
-![](http://opj15jbpo.bkt.clouddn.com/17-5-30/19073791.jpg)
-
-### 功能介绍
-
-待办事项设置，如果设置了提醒日期，在该提醒日期首次打开 chrome 时触发提醒通知。
-
-### 如何使用
-
-由于未能成功支付 chrome 商店的开发者注册费用，所以暂时不支持在线安装。
-
-您可以下载或者克隆本仓库，打开谷歌浏览器，进入扩展程序，勾选`开发者模式`，点击`加载已解压的扩展程序`，选择本仓库的`dist`文件夹
-
-![](http://opj15jbpo.bkt.clouddn.com/17-5-30/65204574.jpg)
-
-如果你曾经发布过 chrome 应用并且想帮我发布一下本插件至 chrome 商店，欢迎联系我: lavyun@163.com
